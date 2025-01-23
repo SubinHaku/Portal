@@ -91,7 +91,8 @@ public class SignupServlet extends HttpServlet {
 			}
 		
 		
-		
+			request.getRequestDispatcher("signuppage.jsp").forward(request, response);
+
 	}else {
 		
 		request.setAttribute("loginfail", "Please Enter the valid Credentials");

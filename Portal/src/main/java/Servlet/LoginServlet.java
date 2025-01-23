@@ -65,7 +65,7 @@ public class LoginServlet extends HttpServlet {
 				
 				  request.getRequestDispatcher("loginportal.jsp").forward(request, response);
 			}else {
-				request.setAttribute("incorrect", "Login fail");
+				request.setAttribute("incorrect", "Sorry Your are not in our Database . Please Signup");
 				request.getRequestDispatcher("loginpage.jsp").forward(request, response);
 			}
 			

@@ -74,7 +74,7 @@ width: 100%;
 </style>
 </head>
 <body>
-	<form action="SignupServlet" method="post" enctype="multipart/form-data">
+	<form action="SignupServlet" method="post" ">
 		
 
 
@@ -87,7 +87,8 @@ width: 100%;
 		  <input type="password" name="repass" class="input" required>
 		  
 		  <input type="submit" value="Signup" class="btn">
-		  <p>${Sucessful} ${fail}</p>
+		  <p>${Sucessful} </p>
+		  <p style="color:red;">${fail} ${loginfail }</p>
 		  <p>${classerror} ${drivererror}</p>
 
 	</form>
